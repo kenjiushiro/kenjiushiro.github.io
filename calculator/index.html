@@ -1,0 +1,135 @@
+<!DOCTYPE html>:L
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SPLI<br />TTER</h1>
+      <div class="calculator">
+        <div class="calculator_calculation">
+          <div class="calculator_calculation_bill">
+            <span class="calculator_calculation_titles grey-font">Bill</span>
+            <div class="calculator_input">
+              <img src="images/icon-dollar.svg" alt="Dollar sign" />
+              <input
+                type="number"
+                class="number-input"
+                placeholder="0"
+                id="bill-input"
+              />
+            </div>
+          </div>
+          <div class="calculator_calculation_tip">
+            <span class="calculator_calculation_titles grey-font"
+              >Select Tip %</span
+            >
+            <div class="percent-btn-container">
+              <button
+                type="button"
+                id="5-percent-btn"
+                class="tip-percent-btn tip-selected"
+                tip="5"
+              >
+                5%
+              </button>
+              <button
+                type="button"
+                id="10-percent-btn"
+                class="tip-percent-btn"
+                tip="10"
+              >
+                10%
+              </button>
+              <button
+                type="button"
+                id="15-percent-btn"
+                class="tip-percent-btn"
+                tip="15"
+              >
+                15%
+              </button>
+              <button
+                type="button"
+                id="25-percent-btn"
+                class="tip-percent-btn"
+                tip="25"
+              >
+                25%
+              </button>
+              <button
+                type="button"
+                id="50-percent-btn"
+                class="tip-percent-btn"
+                tip="50"
+              >
+                50%
+              </button>
+              <input
+                type="number"
+                placeholder="Custom"
+                class="tip-percent-btn"
+                id="custom-percent-btn"
+              />
+            </div>
+          </div>
+          <div class="calculator_calculation_people">
+            <span class="calculator_calculation_titles grey-font"
+              >Number of People</span
+            >
+            <div class="calculator_input">
+              <img src="images/icon-person.svg" alt="Person sign" />
+              <input
+                type="number"
+                class="number-input"
+                placeholder="0"
+                id="number-of-people-input"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="calculator_result">
+          <div class="calculator_result_outputs">
+            <div class="calculator_result_output">
+              <div class="calculator_result_output_text">
+                <span class="calculator_result_output_text_main">
+                  Tip Amount
+                </span>
+                <span class="calculator_result_output_text_aux grey-font">
+                  / person
+                </span>
+              </div>
+              <span class="calculator_result_output_result" id="tip-person-span"
+                >0.00</span
+              >
+            </div>
+            <div class="calculator_result_output">
+              <div class="calculator_result_output_text">
+                <span class="calculator_result_output_text_main"> Total </span>
+                <span class="calculator_result_output_text_aux grey-font">
+                  / person
+                </span>
+              </div>
+              <span
+                class="calculator_result_output_result"
+                id="total-person-span"
+                >0.00</span
+              >
+            </div>
+          </div>
+          <button type="button" class="reset-btn" id="reset-btn">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" />
+  </body>
+</html>

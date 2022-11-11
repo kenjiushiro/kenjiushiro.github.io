@@ -19,8 +19,8 @@
 
 h1 {
   font-size: 1.4rem;
-  letter-spacing: 0.2rem;
-  color: var(--dark-grayish-cyan);
+  letter-spacing: 0.3rem;
+  color: var(--dark-cyan);
   margin-bottom: 2rem;
 }
 body {
@@ -85,8 +85,9 @@ body {
   padding-bottom: 1rem;
 }
 
-.calculator-input img {
-  height: 50%;
+.calculator_input img {
+  margin-left: 0.5rem;
+  height: 1.3rem;
   color: var(--light-gray);
 }
 
@@ -159,6 +160,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #custom-percent-btn {
